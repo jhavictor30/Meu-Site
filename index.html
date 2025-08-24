@@ -6,17 +6,28 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
+  <!-- Coluna de botões -->
+  <div class="sidebar">
+    <button onclick="alert('Você clicou!')">Clique aqui</button>
+    <button onclick="mudarCor()">Mudar Cor</button>
+    <button onclick="mostrarHora()">Mostrar Hora</button>
+    <button onclick="fraseDoDia()">Frase do Dia</button>
+  </div>
+
+  <!-- Conteúdo principal -->
   <div class="card">
     <h1>Olá, Mundo! 🌍</h1>
-    <span class="badge">projeto Joao Victor • </span>
+    <h2>
+  somos campeões do Mundo <span id="rotativo"></span>
+    </h2>
 
-    <p id="mensagem">Esse é meu primeiro site com HTML, CSS e JavaScript!</p>
-
-    <div class="buttons">
-      <button onclick="mudarMensagem()">Clique aqui</button>
-      <button onclick="mudarCor()">Mudar Cor</button>
-      <button onclick="mostrarHora()">Mostrar Hora</button>
-      <button onclick="mostrarFrase()">Frase do Dia</button>
+    <p><span class="tag">projeto João Victor</span></p>
+    <p>Esse é meu primeiro site com HTML, CSS e JavaScript!</p>
+    </div>
+    </div>
+    <div class="contador">
+    <span id="contador">0</span> pessoas já visitaram
     </div>
 
     <hr class="divider">
@@ -30,5 +41,4 @@
 </body>
 
 </html>
-
 
